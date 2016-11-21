@@ -1,3 +1,5 @@
+# include "all.h"
+
 int orderG(){
   return 10;}
 

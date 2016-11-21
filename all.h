@@ -24,3 +24,6 @@ int sizeG();
  * @return 1 if u and v are adjacent, 0 otherwise. Also returns 0 if one of the vertex number is not in the graph range.
  **/
 int are_adjacent(int u, int v);
+
+void graphGenerator(int **t);
+void printGraph(int** t);
