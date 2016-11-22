@@ -25,5 +25,5 @@ int sizeG();
  **/
 int are_adjacent(int u, int v);
 
-void graphGenerator(int **t);
+int** graphGenerator();
 void printGraph(int** t);

@@ -4,37 +4,26 @@
 
 
 
-void graphGenerator(int **t){
+int** graphGenerator(){
 
   int s = orderG();
   int count = s;
-/*
-  t = malloc(sizeof(int)*s);
-
+  int** t = malloc(sizeof(int)*s);
   for (int i = 0; i < count; i++) {
-    printf("%d\n",s );
     t[i]=malloc(sizeof(int)*s);
   }
 
   for (int i = 0; i < count; i++) {
     for (int j = 0; j < count; j++) {
-      printf("%d,%d\n",i,j );
-      t[i][j]=0;
-    }
-  }
-*/
-  for (int i = 0; i < count; i++) {
-    for (int j = 0; j < count; j++) {
       if(i!=j){
         int x= are_adjacent(i,j);
-        printf("%d\n",x);
         t[i][j]=x;
       }
-
       else
       t[i][j]=0;
     }
   }
+  return t;
 }
 
 
