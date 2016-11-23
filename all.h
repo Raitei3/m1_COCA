@@ -27,3 +27,8 @@ int are_adjacent(int u, int v);
 
 int** graphGenerator();
 void printGraph(int** t);
+void cnfGenerator(int** t , int k);
+void initVariable(int** var, int k , int s);
+int factorielAddition(int x);
+int** tableauCreate(int x,int y);
+void print(int** t,int x,int y);

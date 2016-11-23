@@ -6,5 +6,7 @@
 int main(){
   int** t=graphGenerator();
   printGraph(t);
+  printf("\n" );
+  cnfGenerator(t,3);
   return 1;
 }
