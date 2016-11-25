@@ -13,7 +13,7 @@ int** graphGenerator(){
   int count = s;
   int** t = malloc(sizeof(*t)*s);
   for (int i = 0; i < count; i++) {
-    t[i]=malloc(sizeof(int)*s);
+    t[i]=malloc(sizeof(**t)*s);
   }
 
   for (int i = 0; i < count; i++) {
@@ -30,7 +30,8 @@ int** graphGenerator(){
 }
 
 /** Fonction qui affiche le tableau du graphe
-  */
+*/
+
 
 void printGraph(int** t){
   int s = orderG();

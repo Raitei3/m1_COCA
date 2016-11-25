@@ -1,4 +1,6 @@
-
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 /**
  * @file all.h
  *
@@ -31,4 +33,9 @@ void cnfGenerator(int** t , int k);
 void initVariable(int** var, int k , int s);
 int factorielAddition(int x);
 int** tableauCreate(int x,int y);
-void print(int** t,int x,int y);
+void printTableau(int** t,int x);
+int** produitCartesienTab(int** t1 ,int x,int y , int* t2);
+int* tabSommet(int s1,int s2,int i,int k);
+void colorPossibly(int s1, int s2 ,int k);
+int** tabFirstSommet(int s1,int s2,int i,int k);
+//int** tableauInter(int s1 , int s2 , int k);
